@@ -15,8 +15,8 @@
         }
         #countdown {
             font-size: 48px;
-            background-color: #333;
-            color: #fff;
+            background-color: transparent;
+            color: #18488D;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-    <div id="countdown">00:00:05</div>
+    <div id="countdown">03:00:00</div>
     <script>
         function startCountdown(duration, display) {
             var timer = duration, hours, minutes, seconds;
@@ -46,9 +46,9 @@
         }
 
         window.onload = function () {
-            var fiveSeconds = 5; // Set countdown duration to 5 seconds
+            var threeHours = 3 * 3600; // Set countdown duration to 3 hours
             var display = document.querySelector('#countdown');
-            startCountdown(fiveSeconds, display);
+            startCountdown(threeHours, display);
         };
     </script>
 </body>
