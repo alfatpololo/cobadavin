@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: transparent;
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Hilangkan scroll */
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
         #countdown {
-            font-size: 48px;
+            font-size: 96px; /* Perbesar ukuran font */
             background-color: transparent;
             color: #18488D;
             padding: 20px;
             border-radius: 10px;
+            border: 5px solid #18488D; /* Tambahkan border */
             text-align: center;
+            margin: 20px; /* Tambahkan margin untuk jarak dari tepi */
         }
     </style>
 </head>
